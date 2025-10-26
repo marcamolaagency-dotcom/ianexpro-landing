@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Next Pro - Domina Claude Sonnet 4.5 y GPT-4o</title>
+    <meta name="description" content="El único programa que te enseña a dominar las IAs más avanzadas de 2025. Claude Sonnet 4.5, GPT-4o, Artifacts, Canvas Mode. Fundado por Jaime Rodríguez.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: #0a0a0a;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+        }
+        
+        .hero-content { position: relative; z-index: 2; }
+        
+        .badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #D4AF37, #FFD700);
+            color: #000;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #FFD700, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+            color: #cccccc;
+            margin-bottom: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .ai-tools-banner {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #D4AF37;
+            margin: 40px auto;
+            max-width: 800px;
+        }
+        
+        .ai-tools-banner h3 {
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .ai-tools-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .ai-tool {
+            text-align: center;
+        }
+        
+        .ai-tool-icon {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .ai-tool-name {
+            font-weight: 600;
+            color: #FFD700;
+        }
+        
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .stat {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #D4AF37;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #FFD700;
+            display: block;
+        }
+        
+        .stat-text {
+            font-size: 1rem;
+            color: #cccccc;
+            margin-top: 5px;
+        }
+        
+        /* Start Date */
+        .start-date {
+            background: linear-gradient(45deg, #D4AF37, #FFD700);
+            color: #000;
+            padding: 35px;
+            border-radius: 20px;
+            margin: 60px auto;
+            max-width: 700px;
+            text-align: center;
+        }
+        
+        .start-date h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+        
+        .start-date p {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-dark { background: #111; }
+        .section-darker { background: linear-gradient(135deg, #000000, #1a1a1a); }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #FFD700;
+            font-weight: 800;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #cccccc;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Problem Solution Grid */
+        .problem-solution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 80px;
+        }
+        
+        .problem-side, .solution-side {
+            padding: 40px;
+            border-radius: 20px;
+        }
+        
+        .problem-side {
+            background: linear-gradient(135deg, #2d1810, #1a1a1a);
+            border-left: 4px solid #ff4444;
+        }
+        
+        .solution-side {
+            background: linear-gradient(135deg, #1a2d18, #1a1a1a);
+            border-left: 4px solid #44ff44;
+        }
+        
+        .side-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .problem-side .side-title { color: #ff6666; }
+        .solution-side .side-title { color: #66ff66; }
+        
+        .problem-list, .solution-list {
+            list-style: none;
+        }
+        
+        .problem-list li, .solution-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+            position: relative;
+            padding-left: 35px;
+        }
+        
+        .problem-list li::before {
+            content: "❌";
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .solution-list li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        /* Weeks Grid */
+        .weeks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .week-card {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            padding: 35px;
+            border-radius: 15px;
+            border: 2px solid #D4AF37;
+            position: relative;
+        }
+        
+        .week-number {
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            background: #D4AF37;
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 800;
+        }
+        
+        .week-title {
+            font-size: 1.4rem;
+            color: #FFD700;
+            margin: 25px 0 15px 0;
+            font-weight: 700;
+        }
+        
+        .week-description {
+            color: #cccccc;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        
+        .artifacts-list {
+            list-style: none;
+        }
+        
+        .artifacts-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #e0e0e0;
+        }
+        
+        .artifacts-list li::before {
+            content: "⚡";
+            position: absolute;
+            left: 0;
+            color: #FFD700;
+        }
+        
+        /* Tools Comparison */
+        .tools-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .tool-card {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid #D4AF37;
+        }
+        
+        .tool-logo {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .tool-name {
+            font-size: 2rem;
+            color: #FFD700;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .tool-version {
+            color: #D4AF37;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .tool-price {
+            font-size: 1.8rem;
+            color: #D4AF37;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+        
+        .tool-features {
+            list-style: none;
+        }
+        
+        .tool-features li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            border-bottom: 1px solid #333;
+        }
+        
+        .tool-features li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Founder Section */
+        .founder-section {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        /* Rectangle Version (ACTIVE) */
+        .founder-avatar {
+            width: 280px;
+            height: 320px;
+            border-radius: 20px;
+            border: 5px solid #D4AF37;
+            margin: 0 auto 30px auto;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
+            position: relative;
+        }
+
+        .founder-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+        
+        .founder-name {
+            font-size: 2.5rem;
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+        
+        .founder-title {
+            color: #D4AF37;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .founder-bio {
+            color: #cccccc;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            text-align: left;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #D4AF37;
+        }
+        
+        .founder-bio p {
+            margin-bottom: 20px;
+        }
+        
+        /* Pricing */
+        .pricing-card {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            padding: 50px;
+            border-radius: 25px;
+            border: 3px solid #D4AF37;
+            max-width: 700px;
+            margin: 40px auto;
+            position: relative;
+            text-align: center;
+        }
+        
+        .pricing-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(45deg, #ff4444, #ff6666);
+            color: white;
+            padding: 12px 35px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #666;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .current-price {
+            font-size: 4rem;
+            color: #D4AF37;
+            font-weight: 900;
+            margin-bottom: 25px;
+        }
+        
+        .payment-options {
+            color: #cccccc;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #25D366, #20BA5A);
+            color: #fff;
+            padding: 22px 50px;
+            border: none;
+            border-radius: 35px;
+            font-size: 1.4rem;
+            font-weight: 800;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
+            background: linear-gradient(45deg, #20BA5A, #1DA851);
+        }
+
+        .cta-button svg {
+            width: 28px;
+            height: 28px;
+            fill: currentColor;
+        }
+
+        .cta-secondary {
+            background: linear-gradient(45deg, #D4AF37, #FFD700);
+            color: #000;
+        }
+
+        .cta-secondary:hover {
+            background: linear-gradient(45deg, #FFD700, #FFC700);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+        }
+        
+        .guarantee {
+            background: linear-gradient(135deg, #1a2d1a, #1a1a1a);
+            padding: 35px;
+            border-radius: 15px;
+            border: 2px solid #44ff44;
+            margin: 40px 0;
+            text-align: left;
+        }
+        
+        .guarantee-title {
+            color: #66ff66;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 65px;
+            height: 65px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.6);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+            cursor: pointer;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.8);
+        }
+
+        .whatsapp-float svg {
+            width: 36px;
+            height: 36px;
+            fill: white;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.3rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .problem-solution { grid-template-columns: 1fr; gap: 30px; }
+            .tools-comparison { grid-template-columns: 1fr; }
+            .container { padding: 0 15px; }
+            .section { padding: 60px 0; }
+            .cta-button { 
+                padding: 18px 35px; 
+                font-size: 1.1rem;
+                width: 100%;
+                justify-content: center;
+            }
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                bottom: 20px;
+                right: 20px;
+            }
+            .whatsapp-float svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">🚀 PRIMERA SEMANA DE NOVIEMBRE 2025</div>
+                <h1>Domina las IAs más Avanzadas del Mercado en 4 Semanas</h1>
+                <p class="hero-subtitle">
+                    El único programa que te enseña a usar <strong>Claude Sonnet 4.5, GPT-4o, Artifacts, Canvas Mode</strong> y las herramientas IA más poderosas de 2025. Crea 7+ artefactos funcionales que multiplican tu productividad 5x.
+                </p>
+                
+                <div class="ai-tools-banner">
+                    <h3>🎯 Herramientas IA que Dominarás:</h3>
+                    <div class="ai-tools-list">
+                        <div class="ai-tool">
+                            <span class="ai-tool-icon">⚡</span>
+                            <div class="ai-tool-name">Claude Sonnet 4.5</div>
+                            <small>Análisis Superior</small>
+                        </div>
+                        <div class="ai-tool">
+                            <span class="ai-tool-icon">🤖</span>
+                            <div class="ai-tool-name">GPT-4o</div>
+                            <small>Velocidad + Creatividad</small>
+                        </div>
+                        <div class="ai-tool">
+                            <span class="ai-tool-icon">🔬</span>
+                            <div class="ai-tool-name">Perplexity Pro</div>
+                            <small>Research Profesional</small>
+                        </div>
+                        <div class="ai-tool">
+                            <span class="ai-tool-icon">📊</span>
+                            <div class="ai-tool-name">Artifacts</div>
+                            <small>Apps Sin Código</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">7+</span>
+                        <span class="stat-text">Artefactos IA Avanzados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5x</span>
+                        <span class="stat-text">Multiplicador Productividad</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-text">Semanas Transformación</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2025</span>
+                        <span class="stat-text">Herramientas Última Gen</span>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/34666605223?text=Hola%20Jaime%2C%20quiero%20información%20sobre%20las%20formas%20de%20pago%20del%20Curso%20IA%20Next%20Pro" class="cta-button" target="_blank">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Solicitar Formas de Pago
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Date -->
+    <section class="start-date">
+        <div class="container">
+            <h2>🗓️ PRÓXIMO CURSO CONFIRMADO</h2>
+            <p>Primera Semana de Noviembre 2025<br>
+            Horario: 19:30 - 21:00 (Hora España)<br>
+            <strong>Solo 10 cupos disponibles • Ya van 5 inscritos</strong></p>
+        </div>
+    </section>
+
+    <!-- Problem vs Solution -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">El Problema Real de los Profesionales en 2025</h2>
+            <p class="section-subtitle">La brecha entre quien domina IA y quien no se está haciendo enorme</p>
+            
+            <div class="problem-solution">
+                <div class="problem-side">
+                    <h3 class="side-title">❌ Tu Situación Actual</h3>
+                    <ul class="problem-list">
+                        <li>Usas ChatGPT como "Google mejorado" sin aprovechar su verdadero poder</li>
+                        <li>No conoces Claude Sonnet 4.5 (la IA más avanzada para análisis)</li>
+                        <li>Nunca has creado un GPT personalizado o usado Artifacts</li>
+                        <li>Trabajas 10-12 horas diarias en tareas que IA podría automatizar</li>
+                        <li>Tus competidores entregan trabajos superiores en mitad del tiempo</li>
+                        <li>Te sientes perdido con tantas IAs nuevas saliendo cada mes</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-side">
+                    <h3 class="side-title">✅ Tu Nueva Realidad con IA Next Pro</h3>
+                    <ul class="solution-list">
+                        <li>Dominas Claude, GPT-4o, Perplexity y sabes cuál usar para qué</li>
+                        <li>Creas aplicaciones funcionales con Artifacts sin programar</li>
+                        <li>Tienes 7+ artefactos trabajando automáticamente 24/7</li>
+                        <li>Produces 5x más en 80% menos tiempo con calidad superior</li>
+                        <li>Eres el referente en IA que otros buscan para asesoría</li>
+                        <li>Te adaptas rápidamente a cada nueva IA que sale</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Deep Dive -->
+    <section class="section section-darker">
+        <div class="container">
+            <h2 class="section-title">Las IAs más Poderosas de 2025</h2>
+            <p class="section-subtitle">Aprende a dominar las herramientas que están definiendo el futuro del trabajo profesional</p>
+            
+            <div class="tools-comparison">
+                <div class="tool-card">
+                    <span class="tool-logo">🤖</span>
+                    <h3 class="tool-name">ChatGPT Plus</h3>
+                    <div class="tool-version">GPT-4o • Canvas Mode • DALL-E 3</div>
+                    <div class="tool-price">$20/mes</div>
+                    <ul class="tool-features">
+                        <li>GPT-4o: 2x más rápido que GPT-4</li>
+                        <li>Canvas Mode: Edición colaborativa en tiempo real</li>
+                        <li>GPT Store: Crea asistentes personalizados</li>
+                        <li>DALL-E 3: Generación de imágenes profesionales</li>
+                        <li>Voice Mode: Conversaciones naturales</li>
+                        <li>Advanced Data Analysis con Python</li>
+                    </ul>
+                    <p style="margin-top: 20px; color: #D4AF37; font-weight: 600;">
+                        ⚡ Úsalo para: Velocidad, creatividad, contenido visual
+                    </p>
+                </div>
+                
+                <div class="tool-card">
+                    <span class="tool-logo">⚡</span>
+                    <h3 class="tool-name">Claude Pro</h3>
+                    <div class="tool-version">Sonnet 4.5 • Artifacts • Web Search</div>
+                    <div class="tool-price">$20/mes</div>
+                    <ul class="tool-features">
+                        <li>Sonnet 4.5: Mejor razonamiento del mercado</li>
+                        <li>Artifacts: Crea apps web funcionales sin código</li>
+                        <li>Projects: Contexto permanente 200K tokens</li>
+                        <li>Web Search: Búsquedas con fuentes verificadas</li>
+                        <li>PDFs: Analiza hasta 100 páginas simultáneas</li>
+                        <li>Memory: Recuerda preferencias entre sesiones</li>
+                    </ul>
+                    <p style="margin-top: 20px; color: #D4AF37; font-weight: 600;">
+                        🧠 Úsalo para: Análisis profundo, estrategia, aplicaciones
+                    </p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px; padding: 35px; background: linear-gradient(135deg, #1a1a1a, #2d2d2d); border-radius: 20px; border: 2px solid #D4AF37;">
+                <h3 style="color: #FFD700; font-size: 1.8rem; margin-bottom: 20px;">💰 ROI de la Inversión</h3>
+                <p style="font-size: 1.2rem; color: #cccccc;">
+                    <strong>Inversión mensual: $40</strong> (ambas herramientas)<br>
+                    Se recupera en solo <strong>2 horas de productividad ganada</strong><br>
+                    Después de eso: <strong>ROI infinito</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Weeks -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Tu Transformación en 4 Semanas</h2>
+            <p class="section-subtitle">Cada semana construyes artefactos reales con las IAs más avanzadas de 2025</p>
+            
+            <div class="weeks-grid">
+                <div class="week-card">
+                    <div class="week-number">SEMANA 1</div>
+                    <h3 class="week-title">Comet: El Navegador con IA que Actúa por Ti</h3>
+                    <p class="week-description">Domina el navegador Comet y su asistente de IA agent. Aprende ingeniería de prompts avanzada para que los agentes hagan exactamente lo que necesitas.</p>
+                    <ul class="artifacts-list">
+                        <li>Setup de Comet Browser + IA Assistant inteligente</li>
+                        <li>Ingeniería de Prompts 2025: Cómo darle instrucciones precisas a los agentes</li>
+                        <li>Agentes autónomos que automatizan tareas complejas</li>
+                        <li>Integración con Claude Sonnet 4.5 y GPT-4o</li>
+                        <li>Primeros workflows automatizados con AI Agents</li>
+                    </ul>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-number">SEMANA 2</div>
+                    <h3 class="week-title">Automatización con IA Multi-Modal</h3>
+                    <p class="week-description">Artifacts + Canvas Mode + automatización de procesos completos.</p>
+                    <ul class="artifacts-list">
+                        <li>Content Creation Engine (texto + imágenes DALL-E)</li>
+                        <li>Data Intelligence Dashboard (Artifacts interactivos)</li>
+                        <li>Decision Support System (Claude + Canvas GPT)</li>
+                        <li>Workflows multi-IA trabajando 24/7</li>
+                        <li>Apps funcionales sin programar</li>
+                    </ul>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-number">SEMANA 3</div>
+                    <h3 class="week-title">IA Estratégica y Predictiva</h3>
+                    <p class="week-description">Web Search + Perplexity Pro + análisis competitivo automatizado.</p>
+                    <ul class="artifacts-list">
+                        <li>Competitive Intelligence Engine (multi-IA)</li>
+                        <li>Strategic Foresight System (predicciones)</li>
+                        <li>Research profesional con fuentes verificadas</li>
+                        <li>Análisis 360° para decisiones complejas</li>
+                        <li>Early warning indicators personalizados</li>
+                    </ul>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-number">SEMANA 4</div>
+                    <h3 class="week-title">Profesional IA Next Pro Completo</h3>
+                    <p class="week-description">Ecosistema IA integrado + proyecto final individualizado.</p>
+                    <ul class="artifacts-list">
+                        <li>Command Center definitivo integrado</li>
+                        <li>Proyecto final por profesión funcionando</li>
+                        <li>Roadmap de evolución 2025-2026</li>
+                        <li>Certificación IA Next Pro</li>
+                        <li>Acceso vitalicio comunidad Alumni</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder -->
+    <section class="section section-darker">
+        <div class="container">
+            <h2 class="section-title">Tu Mentor: Jaime Rodríguez</h2>
+            <p class="section-subtitle">Pionero en IA desde 2019 • Fundador IA Next Pro</p>
+            
+            <div class="founder-section">
+                <div class="founder-avatar">
+                    <img src="jaime-rodriguez.jpg" alt="Jaime Rodríguez - Fundador IA Next Pro">
+                </div>
+                <h3 class="founder-name">Jaime Rodríguez</h3>
+                <div class="founder-title">Fundador y Mentor Principal</div>
+                
+                <div class="founder-bio">
+                    <p><strong>2019:</strong> Vine a España a estudiar un Máster en Inteligencia Artificial cuando nadie sabía lo que era. Mis amigos pensaban que estaba loco. "¿Para qué sirve eso?" me preguntaban.</p>
+                    
+                    <p><strong>2019-2022:</strong> Trabajé 3 años en marketing mientras veía cómo la IA evolucionaba exponencialmente. Pero fue en el último año cuando vi algo increíble: la IA transformó completamente la industria del marketing y todas las profesiones.</p>
+                    
+                    <p><strong>El Problema que Vi:</strong> Profesionales talentosos usando ChatGPT como "Google mejorado". Perdiendo el verdadero poder de la IA. Mientras tanto, una pequeña élite que dominaba IA estratégicamente se estaba separando del resto.</p>
+                    
+                    <p><strong>2024:</strong> Creé IA Next Pro con una misión clara: convertir profesionales normales en expertos que dominen las IAs más avanzadas del mercado.</p>
+                    
+                    <p><strong>Hoy:</strong> Enseño a profesionales de todas las industrias a dominar Claude Sonnet 4.5, GPT-4o, Artifacts, Canvas Mode y las herramientas que están definiendo el futuro del trabajo.</p>
+                    
+                    <p style="margin-top: 30px; color: #FFD700; font-size: 1.1rem; font-weight: 600;">
+                        "No te enseño teoría. Te muestro exactamente cómo uso IA todos los días para ser 10x más productivo. Y en 4 semanas, tú harás lo mismo."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Inversión en Tu Futuro Digital</h2>
+            <p class="section-subtitle">Todo incluido: Programa completo + herramientas + soporte + comunidad</p>
+            
+            <div class="pricing-card">
+                <div class="pricing-badge">🔥 OFERTA DE LANZAMIENTO NOVIEMBRE</div>
+                <div class="original-price">Valor Real: €1,497</div>
+                <div class="current-price">€497</div>
+                <div class="payment-options">
+                    <strong style="color: #FFD700; font-size: 1.3rem;">IVA INCLUIDO</strong><br>
+                    O en 2 pagos de €249 cada uno<br>
+                    <small>Sin intereses • Pago seguro SSL • Factura disponible</small>
+                </div>
+                
+                <div style="text-align: left; margin: 30px 0; padding: 25px; background: #1a1a1a; border-radius: 15px;">
+                    <h4 style="color: #FFD700; margin-bottom: 15px; font-size: 1.2rem;">✅ TODO INCLUIDO:</h4>
+                    <ul style="list-style: none; color: #cccccc;">
+                        <li style="padding: 8px 0;">✅ 4 semanas de clases en vivo conmigo</li>
+                        <li style="padding: 8px 0;">✅ Acceso a Claude Pro + ChatGPT Plus (guías setup)</li>
+                        <li style="padding: 8px 0;">✅ 7+ artefactos funcionales personalizados</li>
+                        <li style="padding: 8px 0;">✅ Templates y workflows listos para usar</li>
+                        <li style="padding: 8px 0;">✅ Soporte directo conmigo 7 días/semana</li>
+                        <li style="padding: 8px 0;">✅ Grupo WhatsApp VIP exclusivo</li>
+                        <li style="padding: 8px 0;">✅ Grabaciones de todas las sesiones</li>
+                        <li style="padding: 8px 0;">✅ Certificación IA Next Pro</li>
+                        <li style="padding: 8px 0;">✅ Acceso vitalicio a comunidad Alumni</li>
+                        <li style="padding: 8px 0;">✅ Updates mensuales de nuevas IAs 2025-2026</li>
+                    </ul>
+                </div>
+                
+                <a href="https://wa.me/34666605223?text=Hola%20Jaime%2C%20quiero%20solicitar%20información%20sobre%20las%20formas%20de%20pago%20del%20Curso%20IA%20Next%20Pro" class="cta-button" target="_blank">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Solicitar Formas de Pago
+                </a>
+                
+                <div class="guarantee">
+                    <h4 class="guarantee-title">💯 Garantía Total de Resultados</h4>
+                    <p style="color: #cccccc;">Si en 30 días no aumentas tu productividad al menos 3x usando los artefactos que creamos juntos, te devuelvo el 100% de tu dinero sin preguntas. No es una garantía de satisfacción, es una garantía de <strong>RESULTADOS MEDIBLES</strong>. El riesgo es mío, no tuyo.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="color: #ff6666; font-size: 1.3rem; font-weight: 700;">
+                    ⚠️ Solo 10 cupos disponibles • Ya van 5 inscritos<br>
+                    <span style="color: #cccccc; font-size: 1.1rem;">Comienza primera semana de Noviembre</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section style="padding: 80px 0; background: linear-gradient(45deg, #D4AF37, #FFD700); text-align: center;">
+        <div class="container">
+            <h2 style="color: #000; font-size: 2.5rem; margin-bottom: 25px; font-weight: 900;">
+                ⏰ El Futuro No Espera
+            </h2>
+            <p style="color: #000; font-size: 1.4rem; margin-bottom: 35px; font-weight: 600;">
+                En 4 semanas podrías estar dominando Claude Sonnet 4.5, GPT-4o, Artifacts<br>
+                y produciendo 5x más que hoy. O podrías seguir luchando con tareas manuales.<br>
+                <strong>La decisión es tuya.</strong>
+            </p>
+            <a href="https://wa.me/34666605223?text=Hola%20Jaime%2C%20quiero%20reservar%20mi%20cupo%20en%20el%20Curso%20IA%20Next%20Pro" class="cta-button cta-secondary" target="_blank">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Reservar Mi Cupo Ahora
+            </a>
+            <p style="color: #000; margin-top: 20px; font-size: 0.9rem;">
+                Primera semana de Noviembre 2025 • Solo 5 cupos restantes de 10
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #000; padding: 40px 0; text-align: center; color: #666;">
+        <div class="container">
+            <p>© 2025 IA Next Pro. Todos los derechos reservados.</p>
+            <p style="margin-top: 10px;">Fundado por Jaime Rodríguez • Pionero en IA desde 2019</p>
+            <p style="margin-top: 20px;">
+                <a href="mailto:jaime.rodriguez@marcamoola.com" style="color: #D4AF37; text-decoration: none; margin: 0 15px;">Contacto: jaime.rodriguez@marcamoola.com</a>
+            </p>
+            <p style="margin-top: 10px;">
+                <a href="https://wa.me/34666605223" style="color: #25D366; text-decoration: none; font-weight: 600;">WhatsApp: +34 666 60 52 23</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/34666605223?text=Hola%20Jaime%2C%20quiero%20información%20sobre%20el%20Curso%20IA%20Next%20Pro" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+</body>
+</html>
