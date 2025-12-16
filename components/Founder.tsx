@@ -33,7 +33,7 @@ const Founder: React.FC = () => {
                 He visto la brecha crecer: profesionales experimentados perdiendo relevancia por no adaptarse, y juniors usando herramientas potentes sin criterio estratégico.
               </p>
               <p>
-                Fundé <strong>IA Next Pro</strong> con una premisa: <strong>Respetar tu tiempo y tu experiencia.</strong> No te enseñaré teoría básica. Te enseñaré a integrar Claude Sonnet 4.5, GPT-5.2 y Artifacts en tu flujo de trabajo ejecutivo para multiplicar tu impacto.
+                Fundé <strong>IA Next Pro</strong> con una premisa: <strong>Respetar tu tiempo y tu experiencia.</strong> No te enseñaré teoría básica. Te enseñaré a integrar las <strong>últimas versiones de Claude, ChatGPT y Artifacts</strong> en tu flujo de trabajo ejecutivo para multiplicar tu impacto.
               </p>
               <blockquote className="border-l-4 border-gold-500 pl-4 mt-6 italic text-white">
                 "Este no es un curso para aprender a usar un chat. Es un entrenamiento para directivos que quieren escalar sus capacidades usando la mejor tecnología disponible."

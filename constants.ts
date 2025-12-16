@@ -5,23 +5,23 @@ export const WHATSAPP_LINK = "https://wa.me/34666605223?text=Hola%20Jaime%2C%20s
 export const FEATURES = [
   {
     icon: MonitorPlay,
-    title: "4 Clases de 90 Minutos",
-    desc: "Formato ejecutivo en vivo. Sin vídeos grabados. 90 minutos de implementación pura cada semana, respetando tu agenda."
+    title: "4 Clases de 90 Min (Action Camp)",
+    desc: "Formato ejecutivo en vivo. Nada de teoría aburrida. 90 minutos de pura implementación táctica cada semana."
   },
   {
     icon: Rocket,
-    title: "Eficiencia Radical",
-    desc: "Diseñado para quienes no tienen tiempo. Eliminamos la teoría básica para enfocarnos puramente en Prompt Engineering estratégico."
+    title: "ROI Inmediato",
+    desc: "Ahorra miles de euros en agencias. Aprende a crear tus propias herramientas y automatizaciones desde la primera sesión."
   },
   {
     icon: Users,
     title: "Networking Senior",
-    desc: "Grupo filtrado de 10 profesionales con experiencia. Aprende junto a otros CEOs y emprendedores de alto nivel."
+    desc: "Grupo filtrado. Aprende junto a otros CEOs y emprendedores que buscan resultados, no títulos vacíos."
   },
   {
     icon: Zap,
-    title: "Herramientas 2026",
-    desc: "Acceso y dominio de Claude Sonnet 4.5, GPT-5.2 y Perplexity aplicados a la gestión y estrategia."
+    title: "Herramientas de Vanguardia",
+    desc: "Acceso y dominio de las últimas versiones de Claude, ChatGPT y Perplexity aplicados a la gestión y estrategia."
   }
 ];
 
@@ -31,10 +31,10 @@ export const SYLLABUS = [
     title: "Sistemas Operativos para CEOs con IA",
     description: "Configura tu entorno de alto rendimiento. Aprende Prompt Engineering avanzado para delegar tareas operativas a la IA y recuperar tu tiempo.",
     items: [
-      "Setup Ejecutivo: Comet Browser + IA Assistant",
+      "Setup Ejecutivo: Arc Browser + IA Assistant",
       "Prompt Engineering para Delegación Eficaz",
       "Creación de Agentes Autónomos para tareas repetitivas",
-      "Integración estratégica de Claude 4.5 y GPT-5.2"
+      "Integración estratégica de Claude y ChatGPT"
     ]
   },
   {
@@ -73,10 +73,10 @@ export const SYLLABUS = [
 ];
 
 export const PRICING_INCLUDES = [
-  "4 Clases Prácticas de 90 min EN VIVO",
+  "4 Sesiones de Implementación EN VIVO",
+  "Ahorro de +€2,500 en consultoría técnica",
   "Soporte prioritario vía WhatsApp directo",
-  "Biblioteca de Prompts de Nivel CEO/Directivo",
-  "Acceso a grabaciones de por vida",
+  "Biblioteca de Prompts 'CEO Level'",
   "Certificación IA Next Pro Executive",
-  "Networking en Comunidad VIP de Alumnos"
+  "Acceso de por vida a la Comunidad"
 ];

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, Video, ArrowRight } from 'lucide-react';
+import { Calendar, ArrowRight, TrendingUp } from 'lucide-react';
 import { WHATSAPP_LINK } from '../constants';
 
 const Hero: React.FC = () => {
@@ -27,14 +27,14 @@ const Hero: React.FC = () => {
 
         {/* Main Title */}
         <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-[1.1]">
-          Domina <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600">Claude Sonnet 4.5</span>
-          <br /> y GPT-5.2 en 2026
+          Domina <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600">Claude y ChatGPT</span>
+          <br /> (Últimas Versiones)
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-10 font-light leading-relaxed">
-          Diseñado exclusivamente para <strong className="text-white font-semibold">CEOs, emprendedores y profesionales senior</strong> con poco tiempo.
+          Diseñado exclusivamente para <strong className="text-white font-semibold">CEOs, emprendedores y profesionales senior</strong>.
           <br className="hidden md:block" />
-          Domina el <strong className="text-gold-400">Prompt Engineering Avanzado</strong> en 4 sesiones de 90 minutos, 100% prácticas y sin teoría de relleno.
+          No estudies teoría. <strong className="text-gold-400">Instala un Sistema Operativo de IA</strong> en 4 semanas para automatizar tareas y dirigir con datos.
         </p>
 
         {/* CTA Buttons */}
@@ -48,8 +48,13 @@ const Hero: React.FC = () => {
             Aplicar para una plaza
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
-          <div className="text-gray-400 text-sm font-medium">
-            ⚠️ Solo 10 plazas para perfiles cualificados
+          <div className="flex flex-col items-start gap-1">
+             <div className="text-gray-400 text-xs font-medium uppercase tracking-wide">
+               ⚠️ Solo 10 plazas
+             </div>
+             <div className="text-green-500 text-xs font-bold flex items-center gap-1">
+               <TrendingUp className="w-3 h-3" /> Alta demanda para Enero
+             </div>
           </div>
         </div>
 
@@ -57,8 +62,8 @@ const Hero: React.FC = () => {
         <div className="mt-20 pt-10 border-t border-white/5">
           <p className="text-gray-500 text-sm uppercase tracking-widest mb-6">Tecnologías para Alta Dirección</p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-             <span className="text-xl font-bold flex items-center gap-2"><span className="text-gold-500 text-2xl">✦</span> Claude 4.5</span>
-             <span className="text-xl font-bold flex items-center gap-2"><span className="text-green-500 text-2xl">●</span> GPT-5.2</span>
+             <span className="text-xl font-bold flex items-center gap-2"><span className="text-gold-500 text-2xl">✦</span> Claude</span>
+             <span className="text-xl font-bold flex items-center gap-2"><span className="text-green-500 text-2xl">●</span> ChatGPT</span>
              <span className="text-xl font-bold flex items-center gap-2"><span className="text-blue-400 text-2xl">◈</span> Perplexity</span>
              <span className="text-xl font-bold flex items-center gap-2"><span className="text-purple-500 text-2xl">⚡</span> Artifacts</span>
           </div>
