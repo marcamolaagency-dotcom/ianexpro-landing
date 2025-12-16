@@ -1,82 +1,82 @@
 import { Brain, Cpu, Rocket, Zap, Users, MonitorPlay, Calendar, MessageCircle, BarChart, ShieldCheck } from 'lucide-react';
 
-export const WHATSAPP_LINK = "https://wa.me/34666605223?text=Hola%20Jaime%2C%20quiero%20reservar%20mi%20cupo%20para%20Enero%202026%20en%20IA%20Next%20Pro";
+export const WHATSAPP_LINK = "https://wa.me/34666605223?text=Hola%20Jaime%2C%20soy%20profesional%2Fempresario%20y%20quiero%20reservar%20mi%20cupo%20para%20Enero%202026%20en%20IA%20Next%20Pro";
 
 export const FEATURES = [
   {
     icon: MonitorPlay,
-    title: "100% Online Presencial",
-    desc: "Clases en vivo vía Zoom. Interactúa, pregunta y resuelve dudas en tiempo real con el mentor."
+    title: "4 Clases de 90 Minutos",
+    desc: "Formato ejecutivo en vivo. Sin vídeos grabados. 90 minutos de implementación pura cada semana, respetando tu agenda."
   },
   {
     icon: Rocket,
-    title: "Metodología Práctica",
-    desc: "No es teoría. Construirás 7+ artefactos y automatizaciones durante las sesiones."
+    title: "Eficiencia Radical",
+    desc: "Diseñado para quienes no tienen tiempo. Eliminamos la teoría básica para enfocarnos puramente en Prompt Engineering estratégico."
   },
   {
     icon: Users,
-    title: "Grupo Reducido",
-    desc: "Solo 10 plazas para garantizar atención personalizada y feedback inmediato."
+    title: "Networking Senior",
+    desc: "Grupo filtrado de 10 profesionales con experiencia. Aprende junto a otros CEOs y emprendedores de alto nivel."
   },
   {
     icon: Zap,
     title: "Herramientas 2026",
-    desc: "Acceso y dominio de Claude Sonnet 4.5, GPT-4o, Canvas Mode y Agentes Autónomos."
+    desc: "Acceso y dominio de Claude Sonnet 4.5, GPT-5.2 y Perplexity aplicados a la gestión y estrategia."
   }
 ];
 
 export const SYLLABUS = [
   {
-    week: "SEMANA 1",
-    title: "Comet & Agentes IA: Tu Nuevo Sistema Operativo",
-    description: "Configuración del entorno de alto rendimiento. Domina el navegador Comet y aprende ingeniería de prompts avanzada para delegar tareas a agentes.",
+    week: "CLASE 1 (90 MIN)",
+    title: "Sistemas Operativos para CEOs con IA",
+    description: "Configura tu entorno de alto rendimiento. Aprende Prompt Engineering avanzado para delegar tareas operativas a la IA y recuperar tu tiempo.",
     items: [
-      "Setup de Comet Browser + IA Assistant",
-      "Ingeniería de Prompts Avanzada 2026",
-      "Creación de tu primer Agente Autónomo",
-      "Integración Claude Sonnet 4.5 y GPT-4o"
+      "Setup Ejecutivo: Comet Browser + IA Assistant",
+      "Prompt Engineering para Delegación Eficaz",
+      "Creación de Agentes Autónomos para tareas repetitivas",
+      "Integración estratégica de Claude 4.5 y GPT-5.2"
     ]
   },
   {
-    week: "SEMANA 2",
-    title: "Artifacts & Canvas: Creación de Software sin Código",
-    description: "Aprende a usar 'Artifacts' para generar dashboards y pequeñas aplicaciones funcionales instantáneamente.",
+    week: "CLASE 2 (90 MIN)",
+    title: "Generación de Activos & Software sin Código",
+    description: "Deja de depender de equipos técnicos para todo. Crea dashboards, MVPs y herramientas internas instantáneamente con Artifacts.",
     items: [
-      "Content Creation Engine (Texto + DALL-E 3)",
-      "Data Intelligence Dashboard Interactivos",
-      "Workflows híbridos: Canvas Mode + Claude",
-      "Automatización de reportes complejos"
+      "Content Engine: Automatización de comunicación corporativa",
+      "Dashboards de Inteligencia de Negocio Interactivos",
+      "Prototipado rápido de ideas de negocio",
+      "Automatización de reportes de gestión complejos"
     ]
   },
   {
-    week: "SEMANA 3",
-    title: "Inteligencia Estratégica & Research Profundo",
-    description: "Transforma la búsqueda de información. Usa Perplexity Pro y Web Search para análisis competitivos.",
+    week: "CLASE 3 (90 MIN)",
+    title: "Inteligencia Competitiva & Estrategia",
+    description: "Toma decisiones mejores y más rápidas. Usa Perplexity y análisis profundo para entender tu mercado antes que nadie.",
     items: [
-      "Competitive Intelligence Engine",
-      "Strategic Foresight System (Predicciones)",
-      "Análisis de documentos masivos (100+ págs)",
-      "Toma de decisiones asistida por IA"
+      "Sistema de Inteligencia Competitiva Automatizado con Perplexity",
+      "Análisis de riesgos y predicción de tendencias",
+      "Procesamiento de contratos y documentos legales (100+ págs)",
+      "Toma de decisiones directivas asistida por IA"
     ]
   },
   {
-    week: "SEMANA 4",
-    title: "El Profesional Aumentado: Ecosistema Total",
-    description: "Integración final. Construye tu 'Command Center' y presenta tu proyecto final funcional.",
+    week: "CLASE 4 (90 MIN)",
+    title: "El Líder Aumentado: Tu Command Center",
+    description: "Integración final. Construye tu 'Centro de Mando' personal donde la IA gestiona la operación y tú diriges la estrategia.",
     items: [
-      "Command Center Definitivo",
-      "Proyecto Final aplicado a tu profesión",
-      "Roadmap de evolución IA 2026",
-      "Certificación y acceso a Alumni"
+      "Command Center Definitivo para Dirección",
+      "Proyecto Final: Tu propio sistema de gestión IA",
+      "Roadmap de implementación 2026 para tu empresa",
+      "Certificación Executive y acceso a Alumnos VIP"
     ]
   }
 ];
 
 export const PRICING_INCLUDES = [
-  "4 semanas de clases EN VIVO (Online Presencial)",
-  "Soporte directo vía WhatsApp 7 días/semana",
-  "Plantillas de Prompts de nivel ingeniería",
+  "4 Clases Prácticas de 90 min EN VIVO",
+  "Soporte prioritario vía WhatsApp directo",
+  "Biblioteca de Prompts de Nivel CEO/Directivo",
   "Acceso a grabaciones de por vida",
-  "Certificación IA Next Pro",
-  "Comunidad VIP de Alumni"
+  "Certificación IA Next Pro Executive",
+  "Networking en Comunidad VIP de Alumnos"
 ];

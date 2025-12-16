@@ -23,22 +23,20 @@ const Founder: React.FC = () => {
 
           <div className="w-full md:w-2/3">
             <h2 className="text-3xl font-bold text-white mb-2">Jaime Rodríguez</h2>
-            <p className="text-gold-500 font-medium mb-6">Fundador IA Next Pro • Pionero en IA desde 2019</p>
+            <p className="text-gold-500 font-medium mb-6">Fundador IA Next Pro • Consultor de IA para Directivos</p>
             
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                En 2019 vine a España a estudiar un Máster en IA cuando todos me preguntaban "¿Para qué sirve eso?". 
+                Como <strong>empresario, emprendedor y profesional</strong>, sé que tu activo más valioso es el tiempo. En 2019 vine a España a especializarme en IA, no para escribir código, sino para <strong>resolver problemas de negocio.</strong>
               </p>
               <p>
-                Durante 3 años vi la evolución silenciosa de esta tecnología. Hoy, la brecha es real: hay quienes usan ChatGPT como un juguete y quienes lo usamos para 
-                <strong className="text-white"> multiplicar nuestra productividad x10.</strong>
+                He visto la brecha crecer: profesionales experimentados perdiendo relevancia por no adaptarse, y juniors usando herramientas potentes sin criterio estratégico.
               </p>
               <p>
-                Fundé <strong>IA Next Pro</strong> con una obsesión: no enseñarte teoría, sino mostrarte exactamente cómo uso 
-                Claude Sonnet 4.5 y Artifacts en mi día a día para gestionar negocios, analizar datos y crear software sin programar.
+                Fundé <strong>IA Next Pro</strong> con una premisa: <strong>Respetar tu tiempo y tu experiencia.</strong> No te enseñaré teoría básica. Te enseñaré a integrar Claude Sonnet 4.5, GPT-5.2 y Artifacts en tu flujo de trabajo ejecutivo para multiplicar tu impacto.
               </p>
               <blockquote className="border-l-4 border-gold-500 pl-4 mt-6 italic text-white">
-                "No quiero que veas videos. Quiero que en 4 semanas tengas un sistema de IA funcionando para tu profesión."
+                "Este no es un curso para aprender a usar un chat. Es un entrenamiento para directivos que quieren escalar sus capacidades usando la mejor tecnología disponible."
               </blockquote>
             </div>
           </div>
