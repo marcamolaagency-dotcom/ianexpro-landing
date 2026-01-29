@@ -1,6 +1,6 @@
 import { Brain, Cpu, Rocket, Zap, Users, MonitorPlay, Calendar, MessageCircle, BarChart, ShieldCheck } from 'lucide-react';
 
-export const WHATSAPP_LINK = "https://wa.me/34666605223?text=Hola%20Jaime%2C%20soy%20profesional%2Fempresario%20y%20quiero%20reservar%20mi%20cupo%20para%20Enero%202026%20en%20IA%20Next%20Pro";
+export const WHATSAPP_LINK = "https://wa.me/34666605223?text=Hola%20Jaime%2C%20soy%20profesional%2Fempresario%20y%20quiero%20reservar%20mi%20cupo%20para%20Febrero%202026%20en%20IA%20Next%20Pro";
 
 export const FEATURES = [
   {

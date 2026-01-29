@@ -20,7 +20,7 @@ function App() {
       <footer className="bg-black py-10 text-center text-gray-600 border-t border-white/5">
         <div className="container mx-auto px-4">
           <p className="mb-2">© 2026 IA Next Pro. Todos los derechos reservados.</p>
-          <p className="text-sm">Edición Enero 2026 • Formación Online Presencial</p>
+          <p className="text-sm">Edición Febrero 2026 • Formación Online Presencial</p>
         </div>
       </footer>
 

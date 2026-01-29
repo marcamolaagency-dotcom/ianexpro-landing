@@ -31,7 +31,7 @@ const Pricing: React.FC = () => {
               <span className="text-7xl font-black text-white tracking-tighter">€497</span>
             </div>
             <p className="text-gold-500 font-medium mb-8 text-sm uppercase tracking-wide">
-              Solo disponible para las 10 plazas de Enero
+              Solo disponible para las 10 plazas de Febrero
             </p>
 
             <a 
