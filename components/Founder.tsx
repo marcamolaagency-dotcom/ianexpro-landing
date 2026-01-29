@@ -1,5 +1,5 @@
 import React from 'react';
-import founderImage from '../assets/founder/jaime-rodriguez.jpg';
+import founderImage from '../assets/founder/jaime-rodriguez.jpeg';
 
 const Founder: React.FC = () => {
   return (
