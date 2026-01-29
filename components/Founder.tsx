@@ -1,4 +1,5 @@
 import React from 'react';
+import founderImage from '../assets/founder/jaime-rodriguez.jpg';
 
 const Founder: React.FC = () => {
   return (
@@ -12,9 +13,8 @@ const Founder: React.FC = () => {
           <div className="w-full md:w-1/3">
              <div className="relative group">
                 <div className="absolute inset-0 bg-gold-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                {/* Placeholder image for Jaime */}
-                <img 
-                  src="https://picsum.photos/id/1/400/500" 
+                <img
+                  src={founderImage}
                   alt="Jaime Rodríguez" 
                   className="relative w-full rounded-2xl border-2 border-gold-500/50 grayscale hover:grayscale-0 transition-all duration-500"
                 />
