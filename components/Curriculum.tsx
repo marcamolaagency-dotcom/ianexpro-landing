@@ -7,7 +7,7 @@ const Curriculum: React.FC = () => {
     <section className="py-24 bg-dark-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Plan de Estudios <span className="text-gold-500">Enero 2026</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Plan de Estudios <span className="text-gold-500">Febrero 2026</span></h2>
           <p className="text-gray-400">4 Semanas de inmersión total y construcción de portafolio.</p>
         </div>
 

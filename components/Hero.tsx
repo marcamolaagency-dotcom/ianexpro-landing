@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           </div>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 font-semibold text-sm backdrop-blur-md">
             <Calendar className="w-4 h-4" />
-            INICIO: 1ª SEMANA ENERO 2026
+            INICIO: 2ª SEMANA FEBRERO 2026
           </div>
         </div>
 
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
                ⚠️ Solo 10 plazas
              </div>
              <div className="text-green-500 text-xs font-bold flex items-center gap-1">
-               <TrendingUp className="w-3 h-3" /> Alta demanda para Enero
+               <TrendingUp className="w-3 h-3" /> Alta demanda para Febrero
              </div>
           </div>
         </div>
